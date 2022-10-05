@@ -141,9 +141,22 @@
 				<div class="row gtr-150">
 					<div class="col-4 col-12-medium">
 						<span class="image fit">
-							<a href="https://greyarrowtrading.com/" target="_blank">
-								<img src="images/unedited-black-white-indian.jpg" alt="black white photo of indian sculpture antelope canyon" />
-							</a>
+								<!-- TODO: FIX THE JS FUNCTION FOR THIS BLACK AND WHITE IMAGE -->
+								<img src="images/unedited-black-white-indian.jpg" alt="black white photo of indian sculpture antelope canyon" usemap="#workmap">
+
+								<!-- usemap and workmap code linked from black/white photo from above -->
+								<map name="workmap">
+									<area shape="circle" coords="1720, 1765, 1200" onclick="myFunction()">
+								</map>
+
+								<!-- script for workmap circle onclick my info function for above code -->
+								<script>
+									function myFunction() {
+										alert("You clicked the black & white photo! This photo is unedited from Photoshop. Just used a black and white filter with iPhone. It's amazing how dirt and water and force can create amazing ART!")
+									}
+								</script>
+								<!-- END TODO -->
+								
 						</span>
 						
 						<!-- USE LATER: DON'T DELETE -->
