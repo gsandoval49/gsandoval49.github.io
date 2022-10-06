@@ -2324,6 +2324,14 @@ input, select, textarea {
 			color: #6b88e6;
 		}
 
+		.icon.style7:before {
+			color: #365ee3;
+		}
+
+		.icon.style8:before {
+			color: #8e20d8;
+		}
+
 		.icon.major {
 			text-decoration: none;
 			color: #555;
