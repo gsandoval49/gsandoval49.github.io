@@ -3287,6 +3287,7 @@ input, select, textarea {
 					padding: 0;
 				}
 		
+		/* DELETE THIS SECTION LATER */
 		.my-footer-name {
 			text-decoration: underline;
 		}
@@ -3294,6 +3295,7 @@ input, select, textarea {
 		.my-footer-copyright {
 			text-decoration: underline;
 		}
+		/* END - /* DELETE THIS SECTION LATER */ */
 
 /* XLarge */
 
