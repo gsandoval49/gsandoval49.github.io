@@ -3286,6 +3286,10 @@ input, select, textarea {
 					margin-left: 0;
 					padding: 0;
 				}
+		
+		.my-footer-name {
+			text-decoration: underline;
+		}
 
 /* XLarge */
 
