@@ -37,6 +37,7 @@
 
 */
 
+
 $(function() {
 	// Vars
 	var pointsA = [],
@@ -61,9 +62,9 @@ $(function() {
 		mouseSpeedX = 0,
 		mouseSpeedY = 0;
 
-	/**
-	 * Get mouse direction
-	 */
+		//Get mouse direction
+		 
+	
 	function mouseDirection(e) {
 		if (mouseX < e.pageX)
 			mouseDirectionX = 1;
@@ -86,10 +87,9 @@ $(function() {
 		relMouseY = (mouseY - $canvas.offset().top);
 	}
 	$(document).on('mousemove', mouseDirection);
-
-	/**
-	 * Get mouse speed
-	 */
+	
+	//Get mouse speed
+	 
 	function mouseSpeed() {
 		mouseSpeedX = mouseX - mouseLastX;
 		mouseSpeedY = mouseY - mouseLastY;
@@ -100,10 +100,9 @@ $(function() {
 		setTimeout(mouseSpeed, 40);
 	}
 	mouseSpeed();
-
-	/**
-	 * Init button
-	 */
+	
+	
+	//Init button
 	function initButton() {
 		// Guard: exit early if the button does not exist
 		if (!$('.btn-liquid').length) return;
@@ -148,17 +147,19 @@ $(function() {
 		renderCanvas();
 	}
 
-	/**
-	 * Add points
-	 */
+	
+	
+	//Add points
+
 	function addPoints(x, y) {
 		pointsA.push(new Point(x, y, 1));
 		pointsB.push(new Point(x, y, 2));
 	}
 
-	/**
-	 * Point
-	 */
+
+	// Point
+
+
 	function Point(x, y, level) {
 	  this.x = this.ix = 50+x;
 	  this.y = this.iy = 50+y;
@@ -199,9 +200,9 @@ $(function() {
 	};
 
 
-	/**
-	 * Render canvas
-	 */
+	//Render canvas
+
+
 	function renderCanvas() {
 		// rAF
 		rafID = requestAnimationFrame(renderCanvas);
