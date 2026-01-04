@@ -105,6 +105,9 @@ $(function() {
 	 * Init button
 	 */
 	function initButton() {
+		// Guard: exit early if the button does not exist
+		if (!$('.btn-liquid').length) return;
+
 		// Get button
 		var button = $('.btn-liquid');
 		var buttonWidth = button.width();
